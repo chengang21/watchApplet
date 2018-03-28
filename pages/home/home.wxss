@@ -1,0 +1,111 @@
+/* pages/home/home.wxss */
+
+.canvas {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+}
+
+.line-chart-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  padding: 24rpx 24rpx 24rpx 24rpx;
+}
+
+.line-chart-title .sys-line {
+  width: 24rpx;
+  height: 4rpx;
+  margin: 12rpx 12rpx 12rpx 12rpx;
+  background-color: #7cb5ec;
+}
+
+.line-chart-title .dia-line {
+  width: 24rpx;
+  height: 4rpx;
+  margin: 12rpx 12rpx 12rpx 32rpx;
+  background-color: #f7a35c;
+}
+
+.line-chart-title .title-text {
+  font-size: 14px;
+}
+
+.last-7-day-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 34rpx 24rpx 34rpx 24rpx;
+}
+
+.content-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24rpx 24rpx 44rpx 24rpx;
+}
+
+.content-item-child {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+}
+
+.content-item-child-icon {
+  display: flex;
+  width: 100%; 
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  justify-content: center; 
+  /* padding: 12rpx; */
+}
+
+.content-item-child-count { 
+   padding: 12rpx; 
+}
+
+.content-item-child-normal { 
+   padding: 12rpx;
+   font-size: 28rpx; 
+}
+
+.line {
+  width: 100%;
+  height: 2rpx;
+  background-color: #f3f3f3;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24rpx;
+  position: relative;
+  background-color: #eeeeee;
+}
+
+.input-item-horver {
+  background-color: #eeeeee;
+}
+
+.text-dark {
+   font-size: 32rpx; 
+}
+
+.input-item-text {
+  width: 100%;
+}
+
+.text-red {
+   font-size: 32rpx; 
+   color: red;
+}
+
+

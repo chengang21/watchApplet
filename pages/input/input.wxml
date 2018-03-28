@@ -1,0 +1,46 @@
+<!--pages/input/input.wxml-->
+<view>
+  <view class='head-time'>
+    <label>{{currentTime}}</label>
+  </view>
+
+  <form bindsubmit='onClickSubmit'>
+    <view class='head-time'>
+      <label>手写输入</label>
+    </view>
+
+    <view class="line"></view>
+    <view class="input-content">
+      <label class="input-head-text">高压/收缩压(mmHg)</label>
+      <input name="high_pressure" value="{{high_pressure}}" type='number' class="input-content-text" placeholder="请输入" />
+    </view>
+
+    <view class="line-pading-left"></view>
+    <view class="input-content">
+      <label class="input-head-text">低压/舒张压(mmHg)</label>
+      <input name="low_pressure" value="{{low_pressure}}" type='number' class="input-content-text" placeholder="请输入" />
+    </view>
+
+    <view class="line-pading-left"></view>
+    <view class="input-content">
+      <label class="input-head-text">脉搏/心率(次/分)</label>
+      <input name="heart_rate" value="{{heart_rate}}" type='number' class="input-content-text" placeholder="请输入" />
+    </view>
+
+    <view class="line"></view>
+
+    <view class='audio-item'>
+
+
+      <label>语音输入，按住按钮按顺序说出测量数据</label>
+      <label>高压 一二零，低压 七十八，心率 六十九</label>
+
+      <view class='audio-view'>
+        <image style="width: 60px; height: 60px;" src="../../images/icon_audio.png" mode="aspectFit" bindtouchstart="touchdown" bindtouchend="touchup"></image>
+      </view>
+    </view>
+
+    <button class='btn' formType="submit">保存</button>
+  </form>
+
+</view>

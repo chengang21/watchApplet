@@ -1,0 +1,47 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.1",
+	"appid": "wx6ee862fab0a7610d",
+	"projectname": "app_watch",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "app分享小程序",
+					"pathName": "pages/home/home",
+					"query": "name=\"18516180412\"&watchId=\"123456\"",
+					"scene": "1007"
+				},
+				{
+					"id": 1,
+					"name": "测试",
+					"pathName": "pages/home/home",
+					"query": "name=\"18516180412\"&watchId=\"123456\"",
+					"scene": "1007"
+				}
+			]
+		}
+	}
+}

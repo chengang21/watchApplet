@@ -1,0 +1,60 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view class='line-chart-title'>
+    <view class='sys-line'></view>
+    <label class='title-text'>收缩压</label>
+
+    <view class='dia-line'></view>
+    <label class='title-text'>舒张压</label>
+  </view>
+  <view wx:if="{{bpressures && bpressures.length > 0}}">
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas"></canvas>
+  </view>
+  <view wx:else>
+    <label class='text-red canvas'>请先上传血压数据</label>
+  </view>
+  <!-- <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" ></canvas> -->
+
+  <view class='last-7-day-item'>
+    <label class='text-dark'>最近7天平均:{{blood_average_value}}</label>
+    <label class='text-dark' style='margin-top: 10rpx;'>{{healthy_tip}}</label>
+  </view>
+
+  <view class='line'></view>
+
+  <view class='content-item'>
+    <view class='content-item-child'>
+      <view class='content-item-child-icon'>
+        <image style="width: 50px; height: 50px;" src="../../images/icon_heart_rate.png" mode="aspectFit"></image>
+        <label class='text-dark'>心率</label>
+      </view>
+      <label class='content-item-child-count text-dark'>{{heartCount}}次</label>
+      <label class='content-item-child-normal'>常规:60-90</label>
+    </view>
+
+    <view class='content-item-child'>
+      <view class='content-item-child-icon'>
+        <image style="width: 50px; height: 50px;" src="../../images/icon_step_counter.png" mode="aspectFit"></image>
+        <label class='text-dark'>计步</label>
+      </view>
+      <label class='content-item-child-count text-dark'>{{stepCount}}步</label>
+      <label class='content-item-child-normal'>常规:6600-20000</label>
+    </view>
+  </view>
+
+  <view class='line'></view>
+
+  <!-- <navigator wx:if="{{hasUserInfo}}" url="../input/input" class="input-item" hover-class="input-item-horver">
+    <label class="input-item-text text-dark">血压输入</label>
+    <image style="width: 10px; height: 13px;" src="../../images/arrow.png" mode="aspectFit"></image>
+  </navigator> -->
+
+  <navigator url="../input/input" class="input-item" hover-class="input-item-horver">
+    <label class="input-item-text text-dark">血压输入</label>
+    <image style="width: 10px; height: 13px;" src="../../images/arrow.png" mode="aspectFit"></image>
+  </navigator>
+
+  <view class='line'></view>
+
+  <!-- <button type="primary" bindtap="updateData">更新数据</button> -->
+</view>
